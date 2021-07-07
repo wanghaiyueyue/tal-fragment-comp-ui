@@ -1,0 +1,22 @@
+@import "./mixins/mixins.scss";
+
+@include b(divider){
+  background-color: #dcdfe6;
+  position: relative;
+}
+
+@include b(divider-horizontal){
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 24px 0;
+}
+
+@include b(divider-vertical){
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  margin: 0 8px;
+  vertical-align: middle;
+  position: relative;
+}
